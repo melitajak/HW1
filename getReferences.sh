@@ -9,7 +9,6 @@ wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M25/gencode
 # download the GTF file for the reference genome
 wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M25/gencode.vM25.primary_assembly.annotation.gtf.gz -O /home/bioinformatikai/HW1/refs/mm10.gtf.gz
 
-
 prefetch -O /home/bioinformatikai/HW1/inputs SRR8985047 SRR8985048 SRR8985051 SRR8985052
 
-fastq-dump --outdir /home/bioinformatikai/HW1/inputs/ --gzip /home/bioinformatikai/HW1/inputs/SRR8985047 /home/bioinformatikai/HW1/inputs/SRR8985048 /home/bioinformatikai/HW1/inputs/SRR8985051 /home/bioinformatikai/HW1/inputs/SRR8985052
+fastq-dump --outdir /home/bioinformatikai/HW1/inputs/ --gzip --split-files /home/bioinformatikai/HW1/inputs/SRR8985047 /home/bioinformatikai/HW1/inputs/SRR8985048 /home/bioinformatikai/HW1/inputs/SRR8985051 /home/bioinformatikai/HW1/inputs/SRR8985052
