@@ -1,0 +1,1 @@
+Bioinformatics analysis project that includes shell scripts for preprocessing and analyzing biological data. The scripts extracts references, collects basic statistics and processes data with or without mapping techniques. Designed for use in Unix-based systems.
